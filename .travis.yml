@@ -1,0 +1,7 @@
+sudo: required
+language: generic
+script:
+  - ifconfig
+  - sudo docker run -ti --rm alpine:3.6 ifconfig
+  - sudo docker run -ti --rm alpine:3.7 ifconfig
+  - sudo docker run -ti --rm alpine:edge ifconfig
